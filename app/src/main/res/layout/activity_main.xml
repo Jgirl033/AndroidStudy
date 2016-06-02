@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:id="@+id/main"
-    tools:context=".MainActivity">
+    tools:context=".layout.MainActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -31,6 +31,26 @@
         android:visibility="invisible"
         layout="@layout/content_linearlayout" />
 
+    <include
+        android:id="@+id/include_grid"
+        android:visibility="invisible"
+        layout="@layout/content_gridlayout" />
+    <include
+        android:id="@+id/include_table"
+        android:visibility="invisible"
+        layout="@layout/content_tablelayout" />
+    <include
+        android:id="@+id/include_frame"
+        android:visibility="invisible"
+        layout="@layout/content_framelayout" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:visibility="gone"
+        android:id="@+id/btnReturn"
+        android:layout_gravity="bottom" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
